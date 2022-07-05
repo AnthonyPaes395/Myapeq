@@ -14,8 +14,9 @@
         <style type="text/css"></style>
     </head>
     <body class="antialiased">
-        <h1>SIGONSA</h1>
+        <img src="{{URL::asset('/logo.png')}}">
         @yield('cabeceras-ul')
         @yield('contenido')
+        @yield('contenido-final')
     </body>
 </html>
