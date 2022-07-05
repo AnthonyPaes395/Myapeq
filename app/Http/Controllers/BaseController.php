@@ -32,6 +32,7 @@ class BaseController extends Controller
 
     public function contacto(Request $request)
     {
-        return view('contacto');
+        $sql = DB::table('usuario')->get()->toArray();
+        return view('contacto')->with('usuario',$sql);
     }
 }
